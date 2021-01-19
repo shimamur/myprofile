@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shimamura's portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!--　ヘッダー　-->
+<header>
+<div class="button_container" id="toggle">
+    <span class="top"></span>
+    <span class="bottom"></span>
+</div>
+
+<!-- メニュー　-->
+<div class="menu_container" id="overlay">
+    <p class="fas fa-bars fa-3x menubtn"></p>
+    <nav>
+        <ul>
+            <li><a href="#" class="menu_top">Top</a></li><br>
+            <li><a href="#" class="menu_profile">Profile</a></li><br>
+            <li><a href="#" class="menu_works">Works</a></li><br>
+            <li><a href="#" class="menu_contact">Contact</a></li>　
+        </ul>
+    </nav>
+</div>
+  
+</header>
+
+<!-- トップ　-->
+<div class="introduction">
+    <div>
+        <h1 class="myname">Akihiro Shimamura</h1>
+        <p class="site">Official Website</p>
+    </div>
+</div>
+
+<!-- 自己紹介 -->
+<div class="profile_section">
+    <div class="subtitle">　
+        <p class="fas fa-user"> Profile<br><br>
+            自己紹介
+        </p>
+        <img id="biblio" src="./image/myimage.jpg" alt="myimage" width="120" height="120" />
+    </div>
+
+    <div class="profile_text">
+        <p>
+            Webエンジニアの<span style="color: crimson;">島村彰宏</span>と申します。<br>
+            ご覧いただきありがとうございます。<br>
+            多くの人の暮らしをより快適なものにするべく<br>
+            Webアプリ開発に励んでいます。<br>
+            ご興味を持ってくださった方はお気軽にご連絡ください。<br>
+        </p>
+    </div>
+
+    <div class="profile_text">
+        <p>
+            <span>－－－　経歴　－－－</span><br>
+            1990年：高知県高知市出身<br>
+            2017年：立命館大学法学部法学科卒業<br>
+            〜2020年：京都市図書館で司書として勤務<br>
+            <br><br>
+        </p>
+    </div>
+
+</div>
+
+<!-- スキル -->
+<div class="skill_section">
+    <div class="subtitle">
+        <p class="fas fa-tools"> Skills<br><br>
+            使用ツール
+        </p>
+    </div>
+
+    <div class="wrapper"> 
+        <div class="skill">
+            <img src="./image/html.svg" alt="html" width="120" height="120"/>
+            <p>HTML5</p>
+        </div>
+
+        <div class="skill">
+            <img src="./image/css.svg" alt="css" width="120" height="120"/>
+            <p>CSS3</p>
+        </div>
+
+        <div class="skill">
+            <img src="./image/javascript.svg" alt="Javascript" width="120" height="120"/>
+            <p>JavaScript5</p>
+        </div>
+
+        <div class="skill">
+            <img src="./image/rails.svg" alt="rails" width="120" height="120"/>
+            <p>Ruby on Rails</p>
+        </div>
+
+        <div class="skill">
+            <img src="./image/git.svg" alt="git" width="120" height="120"/>
+            <p>Git</p>
+        </div>
+    </div>
+</div>
+
+<!-- ワーク　-->
+<div class="portfolio_section">
+
+    <div class="subtitle works">
+        <p class="fas fa-briefcase"> Works<br><br>
+            作成物
+        </p>
+    </div>
+
+    <div class="wrapper">
+        <div class="animated fadein">
+            <a href="#" class="portfolio_link">
+                <div class="portfolio">
+                    <img src="./image/my_portfolio.png" alt="portfolio" />
+                    <p>【Category】オリジナル作品<br><br>
+                        【Title】Shimamura's Portfolio<br><br>
+                        【Skill】HTML / CSS / JQuery<br><br>
+                        プロフィールサイトです。
+                    </p>
+                </div>
+        </div>
+        </a>
+
+        <div class="animated fadein"></div>
+            <a href="#" class="portfolio_link">
+                <div class="portfolio">
+                    <img src="./image/movie-collections.png" alt="portfolio" />
+                    <p>【Category】オリジナル作品<br><br>
+                        【Title】Movie Collections<br><br>
+                        【Skill】HTML / CSS / JQuery / Ruby on Rails<br><br>
+                        国内で一人旅をする方向けの情報交換サイトです。
+                    </p>
+                </div>
+        </div>
+        </a>
+    </div>
+</div>
+</div>
+</div>
+  
+
+<!--　フッター　-->
+<footer>
+<div class="contact_section subtitle">
+    <p class="fas fa-headset"> Contact<br><br>
+        お問い合わせ
+    </p>
+</div>
+
+<!--　コンタクト　-->
+<div　class>
+    <ul class="follow-me">
+        <p>お問い合わせは、下記の連絡先までお願い致します。</p>
+        <li><a href="mailto:a.shimamu&#64;icloud.com" class="fas fa-envelope"></a></li>
+        <li><a href="https://twitter.com/a_shimamu" class="ab fa-twitter-square"></a></li>
+    </ul>
+</div>
+
+
+<div id="copyright">
+    &copy; 2021 Shimamura's Portfolio
+</div>
+
+</footer>
+
+<script src="https://kit.fontawesome.com/2a4c6f7d31.js" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

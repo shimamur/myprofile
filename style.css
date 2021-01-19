@@ -1,0 +1,154 @@
+html, body{
+    background-color: black;
+    color: white;
+    font-family: serif;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.subtitle{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.wrapper{
+    width: 80%;
+    background-color: rgba(0,0,0,0.55);
+    color: white;
+    font-size: 18px;
+    margin: 0 auto 40px auto;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+/*メニュー*/
+.menu_container{
+    max-width:1000px;
+    margin: 0 auto;
+    position: fixed;
+    height:100%;
+}
+
+.menubtn{
+    width:100%;
+    max-width: 50px;
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.55);
+}
+
+nav{
+    background-color:#ccc;
+    padding:70px 3% 20px;
+    position: fixed;
+    height:100%;
+    width:100%;
+    opacity:0.8
+}
+
+nav ul{
+    font-size: 4vw;
+    list-style: none;
+}
+
+/*トップ*/
+
+.introduction{
+    margin: 0 auto;
+    background-image: url("image/top.png");
+    background-size: cover;
+    padding: 300px 0 300px 0;
+    top: 0;
+  }
+
+.myname {
+    letter-spacing: 4px;
+    font-size: 6vw;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+.site {
+    font-size: 4vw;
+  }
+
+/*自己紹介*/
+.profile_section{
+    background-color: white;
+    color: black;
+}
+
+.profile_text{
+    font-size: 20px;
+    font-weight:bold;
+}
+
+#biblio:hover{
+    box-shadow: 10px 10px 10px 5px rgba(0,0,0,0.5);
+    transform: translateY(-5px);
+    transition-duration: 0.5s;
+}
+
+/*スキル*/
+.skill_section{
+    background-image: url("image/skill.jpg");
+    background-size: cover;
+}
+
+.skill{
+    width: 40%;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    font-weight: bold; 
+    height: auto;
+    border: none;
+    margin: 10px;
+    padding-top: 10px;
+}
+
+/*ワーク*/
+.portfolio_section{
+    background-image: url("image/work.jpg");
+    background-size: cover;
+    padding-bottom: 40px;
+}
+
+.works{
+    color: black;
+}
+
+/*コンタクト*/
+.follow-me {
+    font-size: 18px;
+    list-style: none;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    overflow: hidden;
+    padding: 0;
+  }
+  .follow-me li {
+    display: inline-block;
+    margin: 0 15px 80px 0;
+    padding: 0;
+  }
+  .follow-me li a::before {
+    color: white;
+    border-radius: 2px;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 35px;
+    height: 60px;
+    width: 60px; 
+    line-height: 60px; 
+    transition: all .3s ease;
+    text-align: center;
+  }
+  .follow-me li a:hover::before {
+    color: violet;
+  }
