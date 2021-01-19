@@ -119,6 +119,15 @@ nav ul{
     padding-bottom: 40px;
 }
 
+.portfolio img{
+    width: 80%;
+    height: 60%;
+}
+
+.wrapper a{
+    color: white;
+}
+
 .works{
     color: black;
 }
