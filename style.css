@@ -12,6 +12,7 @@ html, body{
 .subtitle{
     font-size: 40px;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .wrapper{
@@ -30,6 +31,7 @@ html, body{
     margin: 0 auto;
     position: fixed;
     height:100%;
+    z-index: 30;
 }
 
 .menubtn{
@@ -44,7 +46,6 @@ html, body{
 
 nav{
     background-color:#ccc;
-    padding:70px 3% 20px;
     position: fixed;
     height:100%;
     width:100%;
@@ -59,23 +60,69 @@ nav ul{
 /*トップ*/
 
 .introduction{
-    margin: 0 auto;
-    background-image: url("image/top.png");
-    background-size: 100% 100%;
-    top: 0;
-    height: 400px;
-  }
+    height: 800px;
+}
+
 
 .myname {
+    margin-top: 80px;
     letter-spacing: 4px;
-    font-size: 6vw;
-    margin: 0 auto;
-    width: 100%;
-  }
+    font-size: 100px;
+}
 
 .site {
-    font-size: 4vw;
-  }
+    font-size: 80px;
+}
+
+.fireman{
+    margin:50px;
+    top: 0px;
+    left: 0px;
+}
+
+#xday{
+    border-radius: 20px;
+    z-index: 20;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition-duration:1s;
+}
+
+#fire{
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+    transition-duration:1s;
+}
+
+.angry {
+    animation: angry 0.1s infinite;
+}
+@keyframes angry {
+    0% {
+        transform: translate(2px, 0);
+    }
+    50% {
+        transform: translate(-2px, 0)
+    }
+}
+
+.shake {
+    animation: shake 0.7s infinite;
+}
+@keyframes shake {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.05, 1)
+    }
+}
 
 /*自己紹介*/
 .profile_section{
@@ -83,9 +130,13 @@ nav ul{
     color: black;
 }
 
-.profile_text{
-    font-size: 20px;
+.profile_text p{
+    font-size: 30px;
     font-weight:bold;
+}
+
+#biblio {
+    border-radius:15px;
 }
 
 #biblio:hover{
@@ -119,10 +170,10 @@ nav ul{
     padding-bottom: 40px;
 }
 
-.portfolio img{
-    width: 80%;
-    height: 60%;
+.portfolio{
+    font-size: 24px;
 }
+
 
 .wrapper a{
     color: white;
@@ -134,7 +185,7 @@ nav ul{
 
 /*コンタクト*/
 .follow-me {
-    font-size: 18px;
+    font-size: 24px;
     list-style: none;
     margin-bottom: 10px;
     margin-left: 30px;

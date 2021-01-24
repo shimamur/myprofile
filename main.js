@@ -4,6 +4,21 @@ $(function() {
     $('.site').hide().fadeIn(6000);
   });
 
+$('#xday').hover(
+  function() {
+    $('#fire').css('opacity', 1);
+    $('#xday').css('opacity', 0.9);
+    $('#fire').addClass('shake');
+    $('#xday').addClass('angry');
+
+  },function() {
+    $('#fire').css('opacity', 0);
+    $('#xday').css('opacity', 1);
+    $('#fire').removeClass('shake');
+    $('#xday').removeClass('angry');
+}
+);
+
 // メニューバー
 $(function(){
     $('nav').hide();
