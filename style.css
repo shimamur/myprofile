@@ -74,56 +74,6 @@ nav ul{
     font-size: 80px;
 }
 
-.fireman{
-    margin:50px;
-    top: 0px;
-    left: 0px;
-}
-
-#xday{
-    border-radius: 20px;
-    z-index: 20;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transition-duration:1s;
-}
-
-#fire{
-    z-index: 10;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    opacity: 0;
-    transition-duration:1s;
-}
-
-.angry {
-    animation: angry 0.1s infinite;
-}
-@keyframes angry {
-    0% {
-        transform: translate(2px, 0);
-    }
-    50% {
-        transform: translate(-2px, 0)
-    }
-}
-
-.shake {
-    animation: shake 0.7s infinite;
-}
-@keyframes shake {
-    0% {
-        transform: scale(1, 1);
-    }
-    50% {
-        transform: scale(1.05, 1)
-    }
-}
-
 /*自己紹介*/
 .profile_section{
     background-color: white;
