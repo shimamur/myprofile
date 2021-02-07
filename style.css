@@ -1,61 +1,94 @@
 html, body{
-    background-color: black;
-    color: white;
+    /* background-color: rgb(215,206,187); */
+    background-image: linear-gradient(#fff8cf,#92cb97);
     font-family: serif;
     margin: 0px;
     padding: 0px;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 }
 
+
 .subtitle{
     font-size: 40px;
-    margin-bottom: 15px;
-    text-align: center;
+}
+
+.subtitle p{
+    font-size: 35px;
+    font-weight: bold;
+    margin:20px 0;
 }
 
 .wrapper{
     width: 80%;
-    background-color: rgba(0,0,0,0.55);
-    color: white;
+    background-color:rgba(215,206,187,0.55);
     font-size: 18px;
     margin: 0 auto 40px auto;
     padding: 20px;
     border-radius: 15px;
   }
 
-/*メニュー*/
-.menu_container{
-    max-width:1000px;
-    margin: 0 auto;
-    position: fixed;
-    height:100%;
-    z-index: 30;
+section{
+    border-top: solid 3px ;
 }
 
-.menubtn{
+h2{
+    margin-bottom: 25px; 
+}
+
+/*メニュー*/
+.headmenu{
+    display: none;
+}
+
+nav ul{
+    list-style: none;
+}
+
+.menuul{
+    display: flex;
+    margin: 0;
+}
+
+.menuul li{
+    padding: 0 10px;
+    font-size: 42px;
+    cursor: pointer;
+}
+
+
+.menuul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.menuul li a:hover{
+    color:rgba(222,77,77,0.55);
+}
+
+
+.btnmenu{
     width:100%;
     max-width: 50px;
     position: fixed;
     top: 10px;
     left: 20px;
     z-index: 999;
-    background-color: rgba(0,0,0,0.55);
+    background-color: rgba(215,206,187,0.55);
+    cursor: pointer;
 }
 
-nav{
+#btnnav{
     background-color:#ccc;
     position: fixed;
-    height:100%;
-    width:100%;
-    opacity:0.8
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity:0.95;
+    z-index: 30;
 }
 
-nav ul{
-    font-size: 4vw;
-    list-style: none;
-}
+
 
 /*トップ*/
 
@@ -66,8 +99,11 @@ nav ul{
 
 .myname {
     margin-top: 80px;
-    letter-spacing: 4px;
     font-size: 100px;
+}
+
+span{
+    color:rgb(222,77,77);
 }
 
 .site {
@@ -75,10 +111,6 @@ nav ul{
 }
 
 /*自己紹介*/
-.profile_section{
-    background-color: white;
-    color: black;
-}
 
 .profile_text p{
     font-size: 30px;
@@ -86,7 +118,8 @@ nav ul{
 }
 
 #biblio {
-    border-radius:15px;
+    border-radius:50%;
+    border: 5px solid rgba(146,203,151);
 }
 
 #biblio:hover{
@@ -96,16 +129,11 @@ nav ul{
 }
 
 /*スキル*/
-.skill_section{
-    background-image: url("image/skill.jpg");
-    background-size: cover;
-}
 
 .skill{
     width: 40%;
     display: inline-block;
-    background-color: rgba(255, 255, 255, 0.9);
-    color: black;
+    background-color:rgba(255,255,255,0.55);
     font-weight: bold; 
     height: auto;
     border: none;
@@ -115,8 +143,6 @@ nav ul{
 
 /*ワーク*/
 .portfolio_section{
-    background-image: url("image/work.jpg");
-    background-size: cover;
     padding-bottom: 40px;
 }
 
@@ -125,13 +151,6 @@ nav ul{
 }
 
 
-.wrapper a{
-    color: white;
-}
-
-.works{
-    color: black;
-}
 
 /*コンタクト*/
 .follow-me {
@@ -141,11 +160,13 @@ nav ul{
     margin-left: 30px;
     overflow: hidden;
     padding: 0;
-  }
+   }
   .follow-me li {
     display: inline-block;
     margin: 0 15px 80px 0;
     padding: 0;
+    border:solid 2px; 
+    border-radius:18px;
   }
   .follow-me li a::before {
     color: white;
@@ -162,3 +183,19 @@ nav ul{
   .follow-me li a:hover::before {
     color: violet;
   }
+
+  /* メディアクエリ */
+@media (min-width: 900px) {
+    .headmenu{
+        display: block;
+    }
+    .menuul{
+        justify-content: flex-end;
+    }
+
+
+    .btnwrapper{
+       display: none;
+
+ } 
+}
