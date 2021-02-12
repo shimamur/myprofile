@@ -1,6 +1,4 @@
 html, body{
-    /* background-color: rgb(215,206,187); */
-    background-image: linear-gradient(#fff8cf,#92cb97);
     font-family: serif;
     margin: 0px;
     padding: 0px;
@@ -28,7 +26,7 @@ html, body{
   }
 
 section{
-    border-top: solid 3px ;
+    border-bottom: solid 2px ;
 }
 
 h2{
@@ -53,6 +51,7 @@ nav ul{
     padding: 0 10px;
     font-size: 42px;
     cursor: pointer;
+    border-bottom: 1px solid black;
 }
 
 
@@ -113,20 +112,14 @@ span{
 /*自己紹介*/
 
 .profile_text p{
-    font-size: 30px;
-    font-weight:bold;
+    font-size: 24px;
 }
 
 #biblio {
-    border-radius:50%;
-    border: 5px solid rgba(146,203,151);
+    border-bottom: 2px solid black;
 }
 
-#biblio:hover{
-    box-shadow: 10px 10px 10px 5px rgba(0,0,0,0.5);
-    transform: translateY(-5px);
-    transition-duration: 0.5s;
-}
+
 
 /*スキル*/
 
@@ -148,8 +141,12 @@ span{
 
 .portfolio{
     font-size: 24px;
+    margin-bottom: 50px;
 }
 
+.portfolio h2, .portfolio p{
+    margin: 0;
+}
 
 
 /*コンタクト*/
@@ -165,11 +162,8 @@ span{
     display: inline-block;
     margin: 0 15px 80px 0;
     padding: 0;
-    border:solid 2px; 
-    border-radius:18px;
   }
   .follow-me li a::before {
-    color: white;
     border-radius: 2px;
     display: inline-block;
     font-family: FontAwesome;
@@ -192,7 +186,6 @@ span{
     .menuul{
         justify-content: flex-end;
     }
-
 
     .btnwrapper{
        display: none;
