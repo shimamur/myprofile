@@ -152,6 +152,10 @@ span{
 
 
 /*コンタクト*/
+.contact p{
+    font-size: 24px;
+}
+
 .follow-me {
     font-size: 24px;
     list-style: none;
@@ -180,10 +184,11 @@ span{
     color: violet;
   }
 
+
 /* スクロール */
 .scroll-in{
     opacity: 0;
-    transition: 2s;
+    transition: 2.2s;
 }
 
 .scroll-right{

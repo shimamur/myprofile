@@ -1,7 +1,6 @@
 $(function() {
-    $('.introduction').hide().fadeIn(3000);
-    $('.myname').hide().fadeIn(5000);
-    $('.site').hide().fadeIn(6000);
+    $('.myname').hide().fadeIn(4500);
+    $('.site').hide().fadeIn(5500);
 
 
 // メニューバー
